@@ -1,6 +1,4 @@
-# Site
-
-
+# DeiA
 
 ## Getting started
 
