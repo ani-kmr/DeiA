@@ -1,6 +1,6 @@
 # About
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=800&color=0A66C2&center=true&vCenter=true&width=820&lines=Data+Platform+Engineer+%26+Architect;Designing+Reliable+Data+Platforms;Docs+%2F+Code+%2F+Runbooks)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=800&color=FF0000&center=true&vCenter=true&width=820&size=30&lines=Data+Platform+Engineer+%26+Architect;Designing+Reliable+Data+Platforms;Docs+%2F+Code+%2F+Runbooks)](https://git.io/typing-svg)
 
 DataCraft Services documentation provides formal, production-ready guidance for designing, building, and operating scalable data platforms. Content is organized as reference-quality docs, reusable code templates, and operational runbooks suitable for team adoption and interview demonstration.
 
