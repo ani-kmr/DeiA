@@ -100,10 +100,11 @@ plugins:
       separator: '[\s\-]+'
       prebuild_index: true
       use_directory_urls: true
-  # Removed git-revision-date-localized plugin
-  - sitemap:
-      changefreq: daily
-      priority: 0.5
+      
+  # Sitemap plugin removed because no matching distribution was found
+  # - sitemap:
+  #     changefreq: daily
+  #     priority: 0.5
   - redirects
   - awesome-pages
   - macros
