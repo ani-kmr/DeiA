@@ -38,97 +38,95 @@ CI/CD | GitHub Actions | GitOps infra + certs
 
 ## 3️⃣ Final Repo Structure (Full)
 
+```
 terraform-aws-infra/
-
-- modules/                        # Reusable building blocks
-  - networking/
-    - main.tf
-    - variables.tf
-    - outputs.tf
-    - versions.tf
-    - README.md
-  - s3-datalake/
-    - main.tf
-    - variables.tf
-    - outputs.tf
-    - lifecycle.tf           # bucket lifecycle / retention
-    - README.md
-  - pki-acm-ca/
-    - main.tf
-    - variables.tf
-    - outputs.tf
-    - policy.tf              # PCA IAM policies
-    - README.md
-  - nifi/
-    - main.tf
-    - variables.tf
-    - outputs.tf
-    - asg.tf                 # autoscaling group
-    - alb.tf                 # ALB + target groups
-    - user-data.tpl          # cloud-init / bootstrap
-    - README.md
-  - airflow/
-    - main.tf
-    - variables.tf
-    - outputs.tf
-    - rds.tf                 # Postgres RDS config
-    - dags_sync.tf           # DAGs sync (S3)
-    - ecs_or_ec2.tf          # optional runtime
-    - README.md
-  - iam/
-    - main.tf
-    - variables.tf
-    - outputs.tf
-    - policies.tf            # managed & inline policies
-    - README.md
-  - monitoring/
-    - main.tf
-    - variables.tf
-    - outputs.tf
-    - alarms.tf              # CloudWatch alarms
-    - dashboards.tf          # optional dashboards
-    - README.md
-
-- environments/                  # Per-account/per-env stacks
-  - dev/
-    - provider.tf               # provider + region
-    - backend.tf                # remote state backend config
-    - main.tf                   # root module composition
-    - variables.tf              # environment variables
-    - terraform.tfvars          # env-specific values (gitignored)
-    - versions.tf               # required_providers & terraform block
-    - outputs.tf                # exported outputs
-  - ppd/                         # same structure as dev
-    - provider.tf
-    - backend.tf
-    - main.tf
-    - variables.tf
-    - terraform.tfvars
-    - versions.tf
-    - outputs.tf
-  - prod/                        # same structure as dev
-    - provider.tf
-    - backend.tf
-    - main.tf
-    - variables.tf
-    - terraform.tfvars
-    - versions.tf
-    - outputs.tf
-
-- cert-requests/                  # GitOps user onboarding
-  - dev/
-    - alice.yaml
-    - bob.yaml
-  - ppd/
-    - ci-user.yaml
-  - prod/
-    - ops-user.yaml
-
-- .github/workflows/
-  - terraform.yml               # Infra deployment (per-branch env selection)
-  - cert-issuer.yml             # Cert issuance automation
-  - promote.yml                 # Promotion workflow (manual approval for PROD)
-  - security-scan.yml           # optional scanners (tfsec, checkov)
+├── modules/                          # Reusable building blocks
+│   ├── networking/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   ├── versions.tf
+│   │   └── README.md
+│   ├── s3-datalake/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   ├── lifecycle.tf
+│   │   └── README.md
+│   ├── pki-acm-ca/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   ├── policy.tf
+│   │   └── README.md
+│   ├── nifi/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   ├── asg.tf
+│   │   ├── alb.tf
+│   │   ├── user-data.tpl
+│   │   └── README.md
+│   ├── airflow/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   ├── rds.tf
+│   │   ├── dags_sync.tf
+│   │   ├── ecs_or_ec2.tf
+│   │   └── README.md
+│   ├── iam/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   │   ├── policies.tf
+│   │   └── README.md
+│   └── monitoring/
+│       ├── main.tf
+│       ├── variables.tf
+│       ├── outputs.tf
+│       ├── alarms.tf
+│       ├── dashboards.tf
+│       └── README.md
+├── environments/                     # Per-account/per-env stacks
+│   ├── dev/
+│   │   ├── provider.tf
+│   │   ├── backend.tf
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── terraform.tfvars
+│   │   ├── versions.tf
+│   │   └── outputs.tf
+│   ├── ppd/
+│   │   ├── provider.tf
+│   │   ├── backend.tf
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── terraform.tfvars
+│   │   ├── versions.tf
+│   │   └── outputs.tf
+│   └── prod/
+│       ├── provider.tf
+│       ├── backend.tf
+│       ├── main.tf
+│       ├── variables.tf
+│       ├── terraform.tfvars
+│       ├── versions.tf
+│       └── outputs.tf
+├── cert-requests/                    # GitOps user onboarding
+│   ├── dev/
+│   │   ├── alice.yaml
+│   │   └── bob.yaml
+│   ├── ppd/
+│   │   └── ci-user.yaml
+│   └── prod/
+│       └── ops-user.yaml
+└── .github/workflows/
+  ├── terraform.yml
+  ├── cert-issuer.yml
+  ├── promote.yml
+  └── security-scan.yml
+```
 
 ## 4️⃣ Environment Flow (DEV → PPD → PROD)
 
