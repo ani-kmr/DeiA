@@ -53,5 +53,10 @@ jobs:
 
       - name: Print deployed URL
         run: |
-          echo "Your site is now live at:"
-          echo "https://${{ github.repository_owner }}.github.io/${{ github.repository }}/"
+          OWNER="${GITHUB_REPOSITORY_OWNER}"
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          if [[ "${REPO_NAME}" == "${OWNER}.github.io" ]]; then
+            echo "Your site is now live at: https://${REPO_NAME}/"
+          else
+            echo "Your site is now live at: https://${OWNER}.github.io/${REPO_NAME}/"
+          fi
