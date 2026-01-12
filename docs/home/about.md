@@ -1,31 +1,68 @@
 # About
 
-This blog is a **project-level documentation hub for data engineers**.  
-It provides **step-by-step guidance** across the entire lifecycle of data projects—from design and implementation to testing, release management, and operations.
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=800&color=0A66C2&center=true&vCenter=true&width=820&lines=Data+Platform+Engineer+%26+Architect;Designing+Reliable+Data+Platforms;Docs+%2F+Code+%2F+Runbooks)](https://git.io/typing-svg)
+
+DataCraft Services documentation provides formal, production-ready guidance for designing, building, and operating scalable data platforms. Content is organized as reference-quality docs, reusable code templates, and operational runbooks suitable for team adoption and interview demonstration.
 
 ---
 
-## What You’ll Find Here
-- **Structured Project Documentation** – Goals, architecture, dependencies, and workflows.
-- **Detailed Code Walkthroughs** – Well-commented examples, reusable modules, and version-controlled snippets.
-- **Release Notes & Change Logs** – Transparent updates with semantic versioning and migration guidance.
-- **Operational Runbooks** – Monitoring, troubleshooting, rollback strategies, and performance tuning.
-- **Governance & Compliance** – Data contracts, lineage, access policies, and audit-ready notes.
+## Quick links
+
+- Architecture & repo layout  
+- Terraform & module templates  
+- NiFi, Airflow, and pipeline examples  
+- CI/CD, GitOps, and promotion workflows  
+- Runbooks: monitoring, alerts, incident response
 
 ---
 
-## Why This Blog Exists
-Data engineering projects often span multiple tools, teams, and compliance requirements.  
-This blog ensures:
+## What you’ll find
 
-- **Clarity** – Every step is documented for easy onboarding and collaboration.
-- **Reliability** – Tested code and controlled releases reduce risk.
-- **Scalability** – Modular templates and reusable workflows accelerate future projects.
+- Structured design documents (requirements, architecture, trade-offs)  
+- Reusable Terraform modules and deployment patterns  
+- Well-documented code templates and examples  
+- Release notes, change logs, and migration guidance  
+- Operational playbooks for SRE and platform teams
 
 ---
 
-## How to Use It
-1. Start with the **overview** to understand scope and architecture.  
-2. Follow the **step-by-step guides** to implement pipelines and workflows.  
-3. Use the **code snippets and templates** to adapt solutions to your environment.  
-4. Track **release notes** to stay aligned with updates and safe upgrade paths.
+## Intended audience
+
+- Data engineers and platform engineers  
+- Infrastructure teams standardizing patterns and security  
+- Engineers preparing production-grade examples for interviews
+
+---
+
+## Governance & compliance
+
+- Recommended access controls and secrets handling  
+- Data lifecycle and retention guidelines  
+- Audit-ready documentation and change tracking
+
+---
+
+## Contributing
+
+Contributions are welcome. Preferred workflow:
+
+1. Open an issue describing the change.  
+2. Submit a PR with scoped changes and documentation updates.  
+3. For infra changes, include terraform plan output and testing notes.
+
+Cert-request examples and onboarding templates live under cert-requests/ for GitOps-driven user provisioning.
+
+---
+
+## How to use this site
+
+1. Start with the project overview to understand scope and dependencies.  
+2. Use module templates to scaffold infra and pipelines.  
+3. Follow runbooks for deployment, monitoring, and incident response.  
+4. Reference release notes before upgrades.
+
+---
+
+## Contact
+
+For doc issues or access requests, open an issue in the docs repo or email the maintainers listed in the repository metadata.

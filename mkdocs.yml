@@ -8,6 +8,10 @@ theme:
   name: material
   logo: assets/logo.png
   favicon: assets/favicon.png
+  repo_url: https://github.com/ani-kmr/DeiA
+  repo_name: GitHub
+  edit_uri: edit/main/docs/
+  include_search_page: true
   features:
     - navigation.instant
     - navigation.tabs
@@ -19,6 +23,8 @@ theme:
     - content.tabs.links
     - footer.social
     - footer.navigation
+    - navigation.tracking
+    - header.autohide
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -92,10 +98,18 @@ plugins:
   - search:
       lang: en
       separator: '[\s\-]+'
-  - tags:
-      listings_map:
-        scoped:
-          scope: true
+      prebuild_index: true
+      use_directory_urls: true
+  - git-revision-date-localized:
+      enable_creation_date: false
+      fallback_to_build_date: true
+      locale: en
+  - sitemap:
+      changefreq: daily
+      priority: 0.5
+  - redirects
+  - awesome-pages
+  - macros
 
 extra:
   social:
@@ -105,6 +119,12 @@ extra:
       link: https://www.linkedin.com/feed/
     - icon: fontawesome/solid/paper-plane
       link: mailto:anilkun42@gmail.com
+  repo:
+    url: https://github.com/ani-kmr/DeiA
+    name: DeiA
+  analytics:
+    provider: google
+    tracking_id: UA-XXXXXXX-X
 
 copyright: |
   Copyright © 2016-2025 Anil Kumar K

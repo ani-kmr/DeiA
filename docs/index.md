@@ -1,4 +1,4 @@
-# Welcome to DE Project Blog
+# Welcome to the DE Project Blog
 
 This blog provides **step-by-step project documentation** for data engineering workflows.  
 Each project is organized into clear sections: Overview, Data Exploration, Modeling, Code Templates, Orchestration, and Deployment.  
@@ -8,7 +8,9 @@ Each project is organized into clear sections: Overview, Data Exploration, Model
 ## 📂 Projects
 
 ### ✈️ Airline Project
+
 - **Overview** → High-level goals, architecture, and dataset description.  
+- **Infrastructure** → Architecture diagrams, provisioning, and infra notes.  
 - **Data Exploration** → Profiling airline data, identifying patterns, and preparing features.  
 - **Modeling** → Building predictive models (e.g., delays, pricing, demand forecasting).  
 - **Code Templates** → Reusable ETL scripts, transformation modules, and pipeline snippets.  
@@ -18,6 +20,7 @@ Each project is organized into clear sections: Overview, Data Exploration, Model
 ---
 
 ### 📊 Market Data Project
+
 - **Overview** → Scope of market datasets, sources, and objectives.  
 - **Data Exploration** → Analyzing raw feeds, cleaning, and enrichment.  
 - **Modeling** → Statistical and ML models for trends, anomalies, or forecasting.  
@@ -28,6 +31,7 @@ Each project is organized into clear sections: Overview, Data Exploration, Model
 ---
 
 ### 💹 Stock Prices Project
+
 - **Overview** → Documentation of stock datasets and project scope.  
 - **Data Exploration** → Exploratory analysis of stock price movements.  
 - **Modeling** → Time-series models, regression, or ML-based predictions.  
@@ -38,7 +42,6 @@ Each project is organized into clear sections: Overview, Data Exploration, Model
 ---
 
 ### 📁 Other Projects
-- General documentation and miscellaneous workflows.  
-- `Projects/others.md`
 
----
+- General documentation and miscellaneous workflows.  
+- [Other Projects](Projects/others.md)
