@@ -100,10 +100,7 @@ plugins:
       separator: '[\s\-]+'
       prebuild_index: true
       use_directory_urls: true
-  - git-revision-date-localized:
-      enable_creation_date: false
-      fallback_to_build_date: true
-      locale: en
+  # Removed git-revision-date-localized plugin
   - sitemap:
       changefreq: daily
       priority: 0.5
