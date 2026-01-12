@@ -1,6 +1,7 @@
 # Technologies & Cloud Services
 
 ## Data Engineering
+
 - Apache Spark
 - Apache Kafka
 - Apache Airflow
@@ -10,14 +11,16 @@
 - Python
 
 ## Cloud Services
+
 - AWS (Amazon Web Services)
-    - S3, EC2, RDS, Lambda, Glue
+  - S3, EC2, RDS, Lambda, Glue
 - Google Cloud Platform
-    - BigQuery, Cloud Storage, Dataflow
+  - BigQuery, Cloud Storage, Dataflow
 - Microsoft Azure
-    - Data Lake Storage, Synapse Analytics, Cosmos DB
+  - Data Lake Storage, Synapse Analytics, Cosmos DB
 
 ## Technologies
+
 - Docker & Kubernetes
 - Git & Version Control
 - CI/CD Pipelines

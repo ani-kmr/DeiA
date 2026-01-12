@@ -1,6 +1,6 @@
-site_name: DE Project Blog
+site_name: DataCraft Service Documentation
 site_description: Documentation for the DE Project
-site_url: https://ani-kmr.github.io/site/
+site_url: https://ani-kmr.github.io/DeiA/
 
 use_directory_urls: true
 
@@ -47,6 +47,7 @@ nav:
   - Projects:
       - Airline:
           - Overview: projects/airline/airline.md
+          - Infrastructure: projects/airline/airline_infrastructure.md
           - Data Exploration: projects/airline/airline_data_exploration.md
           - Modeling: projects/airline/airline_modeling.md
           - Code Templates: projects/airline/airline_code_templates.md
