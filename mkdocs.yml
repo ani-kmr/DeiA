@@ -105,9 +105,7 @@ plugins:
   # - sitemap:
   #     changefreq: daily
   #     priority: 0.5
-  - redirects
-  - awesome-pages
-  - macros
+
 
 extra:
   social:
